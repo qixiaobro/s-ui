@@ -24,8 +24,9 @@ export default defineConfig({
         },
       },
     },
+    minify: "esbuild",
+    // sourcemap: true, // 输出单独 source文件
     cssCodeSplit: true,   // 追加
-    minify: false,
     lib: {
       entry: "./src/entry.ts",
       name: "SmartyUI",
