@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 
-import SmartyUI from "./entry"
+import SmartyUI from "./entry";
 
 createApp({
   template: `
@@ -14,4 +14,4 @@ createApp({
   `,
 })
   .use(SmartyUI)
-  .mount('#app')
+  .mount("#app");
