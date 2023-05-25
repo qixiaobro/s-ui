@@ -13,7 +13,6 @@
     <SButton color="red">红色按钮</SButton>
   </div>
 
-
   <div style="margin-bottom:20px;">
     <SButton color="blue"  icon="search">搜索按钮</SButton>
     <SButton color="green"  icon="edit">编辑按钮</SButton>
@@ -29,7 +28,7 @@
     <SButton color="red"  icon="delete"></SButton>
   </div>
 
-::: details CODE 
+::: details CODE
 使用`size`、`color`、`pain`、`round`属性来定义 Button 的样式。
 
 ​```vue
@@ -41,7 +40,6 @@
     <SButton color="yellow">黄色按钮</SButton>
     <SButton color="red">红色按钮</SButton>
   </div>
-
 
   <div style="margin-bottom:20px;">
     <SButton color="blue"  icon="search">搜索按钮</SButton>

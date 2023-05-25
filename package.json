@@ -8,7 +8,8 @@
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +18,12 @@
     "@iconify-json/ic": "^1.1.13",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vue/test-utils": "^2.3.2",
+    "happy-dom": "^9.20.3",
     "unocss": "^0.52.3",
     "vite": "^4.3.8",
-    "vitepress": "1.0.0-beta.1"
+    "vitepress": "1.0.0-beta.1",
+    "vitest": "^0.31.1"
   },
   "dependencies": {
     "vue": "^3.3.4"
