@@ -1,8 +1,8 @@
-name: Publish Smarty-ui-vite To NPM
+name: Publish ss-ui-test-2023 To NPM
 
 on:
   push:
-    branches: [publish-smarty-ui-vite]
+    branches: [publish-ss-ui-test-2023]
 
 jobs:
   publish:
