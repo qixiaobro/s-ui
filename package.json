@@ -1,8 +1,9 @@
 {
-  "name": "s-ui",
+  "name": "ss-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
