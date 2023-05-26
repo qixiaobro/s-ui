@@ -5,7 +5,7 @@ on:
 jobs:
   UnitTest:
     runs-on: unbuntu-latest
-    step:
+    steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2
         with:
