@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../dist/entry.css">
   </head>
   <body>
     <h1>按需加载组件</h1>
     <div id="app"></div>
     <script type="module">
       import { createApp } from "vue/dist/vue.esm-bundler.js";
-      import { SFCButton, JSXButton, MyButton } from "../../dist/smarty-ui.mjs";
+      import { SFCButton, JSXButton, Button } from "../../dist/smarty-ui.mjs";
 
       createApp({
         template: `
@@ -22,7 +23,7 @@
       })
         .component(SFCButton.name, SFCButton)
         .component(JSXButton.name, JSXButton)
-        .component(MyButton.name, MyButton)
+        .component(Button.name, Button)
         .mount("#app");
     </script>
   </body>

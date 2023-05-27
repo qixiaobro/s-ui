@@ -1,10 +1,10 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
+import { defineConfig, UserConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Unocss from "./config/unocss";
 
-export default defineConfig({
+export const config:UserConfig = {
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js',
@@ -22,6 +22,7 @@ export default defineConfig({
         globals: {
           vue: "Vue",
         },
+        exports: "named",
       },
     },
     minify: "esbuild",
@@ -34,6 +35,7 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   test: {
     // enable jest-like global test APIs
@@ -46,4 +48,6 @@ export default defineConfig({
       web: [/.[tj]sx$/]
     }
   }
-})
+}
+
+export default defineConfig(config as UserConfig)
